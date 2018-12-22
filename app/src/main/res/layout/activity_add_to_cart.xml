@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addToCart"
+    android:id="@+id/parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/brinjal"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:text="Brinjal" />
+
+        <TextView
+            android:id="@+id/brinjalQuantity"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:hint="Quantity" />
+
+        <TextView
+            android:id="@+id/brinjalPrice"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:hint="price" />
+
+        <Button
+            android:id="@+id/removeBrinjal"
+            android:layout_width="wrap_content"
+
+            android:layout_height="50dp"
+            android:onClick="removeItem"
+            android:text="Remove" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/capsicum"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:text="Cqpsicum" />
+
+        <TextView
+            android:id="@+id/capsicumQuantity"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:hint="Quantity" />
+
+        <TextView
+            android:id="@+id/capsicumPrice"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:hint="price" />
+
+        <Button
+            android:id="@+id/removeCapsicum"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Remove"
+            android:onClick="removeItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/carrot"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:text="Carrot" />
+
+        <TextView
+            android:id="@+id/carrotQuantity"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:hint="Quantity" />
+
+        <TextView
+            android:id="@+id/carrotPrice"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:hint="price" />
+
+        <Button
+            android:id="@+id/removeCarrot"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Remove"
+
+            android:onClick="removeItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/potato"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:text="Potato" />
+
+        <TextView
+            android:id="@+id/potatoQuantity"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:hint="Quantity" />
+
+        <TextView
+            android:id="@+id/potatoPrice"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:hint="price" />
+
+        <Button
+            android:id="@+id/removePotato"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Remove"
+            android:onClick="removeItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tomato"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:text="Tomato" />
+
+        <TextView
+            android:id="@+id/tomatoQuantity"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:hint="Quantity" />
+
+        <TextView
+            android:id="@+id/tomatoPrice"
+            android:layout_width="60dp"
+            android:layout_margin="10dp"
+            android:layout_height="50dp"
+            android:hint="price" />
+
+        <Button
+            android:id="@+id/removeTomato"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Remove"
+            android:onClick="removeItem"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Total Cart Value"
+        />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:hint="Total cart Value"
+            android:id="@+id/textViewTotalCartValue"/>
+
+        <Button
+            android:id="@+id/buttonCheckout"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="checkout"
+            android:text="Checkout" />
+    </LinearLayout>
+</LinearLayout>

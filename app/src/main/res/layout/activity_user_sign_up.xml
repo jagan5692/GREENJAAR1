@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".userSignUp">
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".userSignUp">
+    tools:context=".userSignUp"
+    >
 
     <EditText
-        android:id="@+id/fullNameInput"
+        android:id="@+id/firstNameInput"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -16,11 +23,41 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="Full Name"
+        android:hint="First Name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/middleNameInput"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Middle Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameInput" />
+    <EditText
+        android:id="@+id/lastNameInput"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middleNameInput" />
 
     <EditText
         android:id="@+id/mobileNumberInput"
@@ -36,7 +73,7 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fullNameInput" />
+        app:layout_constraintTop_toBottomOf="@+id/lastNameInput" />
 
     <EditText
         android:id="@+id/emailInput"
@@ -103,3 +140,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pwdInput" />
 </android.support.constraint.ConstraintLayout>
+</ScrollView>

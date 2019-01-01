@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jsjags.greenjaar">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".CartValues"
         android:allowBackup="true"
@@ -20,9 +22,16 @@
         <activity android:name=".HomePage" />
         <activity android:name=".userSignUp" />
         <activity android:name=".displayVegies" />
-        <activity android:name=".Main2Activity" />
         <activity android:name=".addToCart" />
-        <activity android:name=".transactionPage"></activity>
+        <activity android:name=".transactionPage" />
+        <activity android:name=".forgotPassword" />
+        <activity android:name=".basketSubscription" />
+        <activity android:name=".subscriptionConfirm" />
+        <activity android:name=".listOfOrders" />
+        <activity android:name=".deliveryAddress" />
+        <activity android:name=".displayMyOrders" />
+        <activity android:name=".selectAddress" />
+        <activity android:name=".mySubscriptions"></activity>
     </application>
 
 </manifest>

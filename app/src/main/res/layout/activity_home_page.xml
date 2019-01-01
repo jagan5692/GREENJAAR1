@@ -1,59 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
-    <LinearLayout
-        android:layout_height="0dp"
+
+    <ImageView
+        android:id="@+id/basket"
         android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:layout_height="300dp"
+        android:onClick="captureClick"
+        app:srcCompat="@drawable/basket" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
 
         <ImageView
             android:id="@+id/vegetables"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
             android:onClick="captureClick"
             app:srcCompat="@drawable/vegetables" />
 
         <ImageView
             android:id="@+id/fruits"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
             android:clickable="true"
             android:onClick="captureClick"
             app:srcCompat="@drawable/fruits" />
 
     </LinearLayout>
     <LinearLayout
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
 
         <ImageView
             android:id="@+id/crops"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
             android:clickable="true"
             android:onClick="captureClick"
-
             app:srcCompat="@drawable/crops" />
 
         <ImageView
             android:id="@+id/items"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
             android:clickable="true"
             android:onClick="captureClick"
-
             app:srcCompat="@drawable/items" />
 
     </LinearLayout>
 </LinearLayout>
+</ScrollView>
